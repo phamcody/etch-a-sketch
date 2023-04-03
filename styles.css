@@ -1,8 +1,14 @@
 body {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f9f5eb;
+}
+
+#right-side {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f9f5eb;
 }
 
 #title {
