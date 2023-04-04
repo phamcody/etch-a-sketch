@@ -49,6 +49,13 @@ body {
     
 }
 
+#color {
+    border-radius: 50px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
 #ratio {
     font-family: 'Josefin Sans', sans-serif;
     color: black;
@@ -142,8 +149,3 @@ body {
     margin: 0;
     padding: 0;
 }
-
-.draw {
-    background-color: #b19292;
-}
-

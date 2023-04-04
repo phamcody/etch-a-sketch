@@ -4,6 +4,7 @@ const grids = document.getElementsByClassName('grid');
 const clearButton = document.querySelector("#clear");
 const drawButton = document.querySelector("#draw");
 const eraseButton = document.querySelector("#erase");
+const colorChange = document.querySelector("#color");
 
 function makeGrid(value) {
     for (let i = 1; i <= value; i++) {
@@ -23,7 +24,7 @@ function makeGrid(value) {
 function drawScreen() {
     Array.from(grids).forEach((grid) => {
         grid.addEventListener('mouseover', () => {
-            grid.classList.add('draw');
+            grid.style.cssText = `background-color: ${colorChange.value}`;
         })
 })
     drawButton.classList.add("selected");
@@ -32,14 +33,14 @@ function drawScreen() {
 
 function clearScreen() {
     Array.from(grids).forEach((grid) => {
-        grid.classList.remove("draw");
+        grid.style.cssText = `background-color: #f9f5eb`;
     })
 }
 
 function erase() {
     Array.from(grids).forEach((grid) => {
         grid.addEventListener('mouseover', () => {
-            grid.classList.remove('draw');
+            grid.style.cssText = `background-color: #f9f5eb`;
         })
 })
 }
