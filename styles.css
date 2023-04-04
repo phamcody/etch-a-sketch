@@ -1,18 +1,40 @@
 body {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     background-color: #f9f5eb;
+    justify-content: center;
     padding: 0;
     margin: 0;
 }
 
+#settings {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
 
+#setting-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#slider {
+    width: 200px;
+}
+
+#invisible-container {
+    flex: 1;
+}
 
 #center-con {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
 }
 
 #title {
