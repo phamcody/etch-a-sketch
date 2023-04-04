@@ -16,6 +16,7 @@ function makeGrid(value) {
             divContainer.appendChild(grid);
         }
     }
+    drawScreen();
 }
 
 
@@ -25,6 +26,8 @@ function drawScreen() {
             grid.classList.add('draw');
         })
 })
+    drawButton.classList.add("selected");
+    eraseButton.classList.remove("selected");
 }
 
 function clearScreen() {
@@ -62,3 +65,12 @@ eraseButton.addEventListener('click', () => {
     drawButton.classList.remove("selected");
 });
 
+slider.addEventListener('input', () => {
+    console.log(slider.value);
+    clearScreen();
+    divContainer = document.getElementsByClassName("divContainer");
+    Array.from(divContainer).forEach((container) => {
+        screenContainer.removeChild(container);
+    })
+    makeGrid(slider.value);
+})
