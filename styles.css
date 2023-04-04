@@ -40,7 +40,6 @@ body {
     background-color: #f9f5eb;
     width: 500px;
     height: 500px;
-    border-radius: 20px;
     box-shadow: -4px -4px #ac2e2e;
     display: flex;
 }
@@ -68,7 +67,7 @@ body {
 }
 
 .grid {
-    background-color: #705e2f;
+    background-color: #f9f5eb;
     flex: 1;
     min-width: 0;
 }
