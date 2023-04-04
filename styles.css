@@ -22,6 +22,18 @@ body {
     font-weight: bold;
 }
 
+#clear {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: #ea5455;
+    border-color: #ea5455;
+    color: white;
+    
+}
+
 #slider {
     width: 200px;
 }
