@@ -73,4 +73,6 @@ slider.addEventListener('input', () => {
         screenContainer.removeChild(container);
     })
     makeGrid(slider.value);
+    ratio = document.querySelector("#ratio");
+    ratio.textContent = `${slider.value} x ${slider.value}`;
 })
