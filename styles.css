@@ -33,6 +33,17 @@ body {
     border-radius: 5px;
 }
 
+#rainbow {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #ea5455;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 40px;
+    border-color: #ea5455;
+    height: 30px;
+}
+
 .selected {
     background-color: #ac2e2e;
 }
