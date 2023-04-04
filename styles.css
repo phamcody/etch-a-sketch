@@ -33,6 +33,10 @@ body {
     border-radius: 5px;
 }
 
+.selected {
+    background-color: #ac2e2e;
+}
+
 #clear {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
