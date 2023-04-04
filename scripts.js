@@ -18,3 +18,12 @@ Array.from(grids).forEach((grid) => {
     })
 })
 
+const slider = document.querySelector("#slider");
+
+const button = document.querySelector("#clear");
+button.addEventListener('click', () => {
+    Array.from(grids).forEach((grid) => {
+        grid.classList.remove('draw');
+    })
+})
+
