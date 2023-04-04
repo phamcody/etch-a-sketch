@@ -5,6 +5,7 @@ const clearButton = document.querySelector("#clear");
 const drawButton = document.querySelector("#draw");
 const eraseButton = document.querySelector("#erase");
 const colorChange = document.querySelector("#color");
+const rainbow = document.querySelector("#rainbow");
 
 function makeGrid(value) {
     for (let i = 1; i <= value; i++) {
@@ -29,6 +30,7 @@ function drawScreen() {
 })
     drawButton.classList.add("selected");
     eraseButton.classList.remove("selected");
+    rainbow.classList.remove("selected");
 }
 
 function clearScreen() {
@@ -57,6 +59,7 @@ drawButton.addEventListener('click', () => {
     drawScreen();
     drawButton.classList.add("selected");
     eraseButton.classList.remove("selected");
+    rainbow.classList.remove("selected");
 });
 
 
@@ -64,7 +67,21 @@ eraseButton.addEventListener('click', () => {
     erase()
     eraseButton.classList.add("selected");
     drawButton.classList.remove("selected");
+    rainbow.classList.remove("selected");
 });
+
+rainbow.addEventListener('click', () => {
+    Array.from(grids).forEach((grid) => {
+        grid.addEventListener('mouseover', () => {
+            const randomColor = Math.floor(Math.random()*16777215).toString(16);
+            grid.style.cssText = `background-color: #${randomColor}`;
+        })
+})
+
+    rainbow.classList.add("selected");
+    drawButton.classList.remove("selected");
+    eraseButton.classList.remove("selected");
+})
 
 slider.addEventListener('input', () => {
     console.log(slider.value);
@@ -77,3 +94,4 @@ slider.addEventListener('input', () => {
     ratio = document.querySelector("#ratio");
     ratio.textContent = `${slider.value} x ${slider.value}`;
 })
+

@@ -39,9 +39,9 @@ body {
     color: white;
     font-size: 20px;
     border-radius: 10px;
-    width: 40px;
+    width: 120px;
     border-color: #ea5455;
-    height: 30px;
+    height: 40px;
 }
 
 .selected {
