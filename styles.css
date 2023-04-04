@@ -80,3 +80,9 @@ body {
     min-width: 0;
 }
 
+.divContainer,
+.grid {
+    margin: 0;
+    padding: 0;
+}
+
