@@ -76,11 +76,12 @@ rainbow.addEventListener('click', () => {
             const randomColor = Math.floor(Math.random()*16777215).toString(16);
             grid.style.cssText = `background-color: #${randomColor}`;
         })
-})
 
     rainbow.classList.add("selected");
     drawButton.classList.remove("selected");
     eraseButton.classList.remove("selected");
+})
+
 })
 
 slider.addEventListener('input', () => {

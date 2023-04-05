@@ -33,7 +33,7 @@ body {
     border-radius: 5px;
 }
 
-#rainbow {
+.rainbow {
     font-family: 'Josefin Sans', sans-serif;
     background-color: #ea5455;
     color: white;
